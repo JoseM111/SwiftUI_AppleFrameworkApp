@@ -5,6 +5,10 @@ final class FrameworkGridViewModel: ObservableObject {
     ///™«««««««««««««««««««««««««««««««««««
     /// ™ Publishes the change when the view updates
     @Published var isShowingDetailView: Bool = false
+    //™•••••••••••••••••••••••••••••••••••«
+    let columns: [GridItem] = [GridItem(.flexible()),
+                               GridItem(.flexible()),
+                               GridItem(.flexible())]
     ///™«««««««««««««««««««««««««««««««««««
     
     // MARK: -∆  Computed Property  '''''''''''''''''''''
