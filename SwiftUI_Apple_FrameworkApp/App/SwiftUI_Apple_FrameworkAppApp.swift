@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUI_Apple_FrameworkAppApp: App {
     var body: some Scene {
         WindowGroup {
-            FrameworkGridView()
+            MainGridView()
         }
     }
 }

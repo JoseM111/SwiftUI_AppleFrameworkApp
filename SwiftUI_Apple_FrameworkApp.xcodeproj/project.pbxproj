@@ -8,30 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		AB132FE0257A493E0071D5E6 /* SwiftUI_Apple_FrameworkAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB132FDF257A493E0071D5E6 /* SwiftUI_Apple_FrameworkAppApp.swift */; };
-		AB132FE2257A493E0071D5E6 /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB132FE1257A493E0071D5E6 /* FrameworkGridView.swift */; };
+		AB132FE2257A493E0071D5E6 /* MainGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB132FE1257A493E0071D5E6 /* MainGridView.swift */; };
 		AB132FE4257A49400071D5E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB132FE3257A49400071D5E6 /* Assets.xcassets */; };
 		AB132FE7257A49400071D5E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB132FE6257A49400071D5E6 /* Preview Assets.xcassets */; };
 		AB132FF2257A49FD0071D5E6 /* LibTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB132FF1257A49FD0071D5E6 /* LibTools.swift */; };
 		AB132FF7257A4A870071D5E6 /* FrameWorkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB132FF6257A4A870071D5E6 /* FrameWorkModel.swift */; };
+		AB75107E25977A1500F0FD7A /* SafariViewUIRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75107D25977A1500F0FD7A /* SafariViewUIRepresentable.swift */; };
 		AB7B8EDA257AE05B004FD634 /* FrameworkTitleSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7B8ED9257AE05B004FD634 /* FrameworkTitleSubView.swift */; };
 		AB7B8EE2257AF7B7004FD634 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7B8EE1257AF7B7004FD634 /* FrameworkDetailView.swift */; };
 		AB8E3E722593F96F0015A69D /* LibModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E3E712593F96F0015A69D /* LibModifiers.swift */; };
 		AB913E8B25974B9A00BCD9B2 /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB913E8A25974B9A00BCD9B2 /* FrameworkGridViewModel.swift */; };
+		ABEC3A6625978E140092596B /* ExtensionFrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEC3A6525978E140092596B /* ExtensionFrameworkDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AB132FDC257A493D0071D5E6 /* SwiftUI_Apple_FrameworkApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_Apple_FrameworkApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB132FDF257A493E0071D5E6 /* SwiftUI_Apple_FrameworkAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Apple_FrameworkAppApp.swift; sourceTree = "<group>"; };
-		AB132FE1257A493E0071D5E6 /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
+		AB132FE1257A493E0071D5E6 /* MainGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGridView.swift; sourceTree = "<group>"; };
 		AB132FE3257A49400071D5E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB132FE6257A49400071D5E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AB132FE8257A49400071D5E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB132FF1257A49FD0071D5E6 /* LibTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibTools.swift; sourceTree = "<group>"; };
 		AB132FF6257A4A870071D5E6 /* FrameWorkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameWorkModel.swift; sourceTree = "<group>"; };
+		AB75107D25977A1500F0FD7A /* SafariViewUIRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariViewUIRepresentable.swift; sourceTree = "<group>"; };
 		AB7B8ED9257AE05B004FD634 /* FrameworkTitleSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkTitleSubView.swift; sourceTree = "<group>"; };
 		AB7B8EE1257AF7B7004FD634 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
 		AB8E3E712593F96F0015A69D /* LibModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibModifiers.swift; sourceTree = "<group>"; };
 		AB913E8A25974B9A00BCD9B2 /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
+		ABEC3A6525978E140092596B /* ExtensionFrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionFrameworkDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,15 +68,13 @@
 		AB132FDE257A493D0071D5E6 /* SwiftUI_Apple_FrameworkApp */ = {
 			isa = PBXGroup;
 			children = (
-				AB132FDF257A493E0071D5E6 /* SwiftUI_Apple_FrameworkAppApp.swift */,
-				AB132FE1257A493E0071D5E6 /* FrameworkGridView.swift */,
-				AB7B8EE1257AF7B7004FD634 /* FrameworkDetailView.swift */,
+				ABEC3A6B25978EA70092596B /* App */,
+				ABEC3A6D25978EDF0092596B /* Models */,
+				ABEC3A6325978DEE0092596B /* Views */,
+				ABEC3A6F25978F1A0092596B /* ViewModels */,
 				AB132FF0257A49EE0071D5E6 /* Res */,
 				AB132FE3257A49400071D5E6 /* Assets.xcassets */,
 				AB132FE5257A49400071D5E6 /* Preview Content */,
-				AB132FF6257A4A870071D5E6 /* FrameWorkModel.swift */,
-				AB7B8ED9257AE05B004FD634 /* FrameworkTitleSubView.swift */,
-				AB913E8A25974B9A00BCD9B2 /* FrameworkGridViewModel.swift */,
 			);
 			path = SwiftUI_Apple_FrameworkApp;
 			sourceTree = "<group>";
@@ -90,6 +92,7 @@
 			children = (
 				AB132FF1257A49FD0071D5E6 /* LibTools.swift */,
 				AB8E3E712593F96F0015A69D /* LibModifiers.swift */,
+				AB75107D25977A1500F0FD7A /* SafariViewUIRepresentable.swift */,
 			);
 			path = Libs;
 			sourceTree = "<group>";
@@ -101,6 +104,65 @@
 				AB132FE8257A49400071D5E6 /* Info.plist */,
 			);
 			path = Res;
+			sourceTree = "<group>";
+		};
+		ABEC3A6325978DEE0092596B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ABEC3A6425978DF60092596B /* Extensions */,
+				ABEC3A6E25978F060092596B /* SubViews */,
+				ABEC3A6A25978E8F0092596B /* Screens */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ABEC3A6425978DF60092596B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ABEC3A6525978E140092596B /* ExtensionFrameworkDetailView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ABEC3A6A25978E8F0092596B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				AB7B8EE1257AF7B7004FD634 /* FrameworkDetailView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		ABEC3A6B25978EA70092596B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AB132FDF257A493E0071D5E6 /* SwiftUI_Apple_FrameworkAppApp.swift */,
+				AB132FE1257A493E0071D5E6 /* MainGridView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		ABEC3A6D25978EDF0092596B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AB132FF6257A4A870071D5E6 /* FrameWorkModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ABEC3A6E25978F060092596B /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				AB7B8ED9257AE05B004FD634 /* FrameworkTitleSubView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		ABEC3A6F25978F1A0092596B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AB913E8A25974B9A00BCD9B2 /* FrameworkGridViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,8 +234,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB132FE2257A493E0071D5E6 /* FrameworkGridView.swift in Sources */,
+				ABEC3A6625978E140092596B /* ExtensionFrameworkDetailView.swift in Sources */,
+				AB132FE2257A493E0071D5E6 /* MainGridView.swift in Sources */,
 				AB132FF2257A49FD0071D5E6 /* LibTools.swift in Sources */,
+				AB75107E25977A1500F0FD7A /* SafariViewUIRepresentable.swift in Sources */,
 				AB7B8EE2257AF7B7004FD634 /* FrameworkDetailView.swift in Sources */,
 				AB132FF7257A4A870071D5E6 /* FrameWorkModel.swift in Sources */,
 				AB132FE0257A493E0071D5E6 /* SwiftUI_Apple_FrameworkAppApp.swift in Sources */,
