@@ -17,6 +17,7 @@ struct FrameworkGridView_Previews: PreviewProvider {
 struct FrameworkGridView: View {
     // MARK: - ™PROPERTIES™
     ///™«««««««««««««««««««««««««««««««««««
+    // @StateObject: Data will persist & won't be destroyed & recreated
     @StateObject var frameworkGridVM = FrameworkGridViewModel()
     //™•••••••••••••••••••••••••••••••••••«
     let columns: [GridItem] = [GridItem(.flexible()),
@@ -45,15 +46,26 @@ struct FrameworkGridView: View {
                         //--|............................................
                             .onTapGesture {
                                 //∆..........
-                                
+                                frameworkGridVM.selectedFramework = framework
+                            }
+                        //--|............................................
+                        // MARK: - sheet: When a you tap on a framework, you should the FrameworkDetailView
+                        //--|............................................
+                            .sheet(isPresented: $frameworkGridVM.isShowingDetailView) {
+                                //∆..........
+                                /// ™ NOTE: selectedFramework? is an optional
+                                FrameworkDetailView(
+                                    framework: frameworkGridVM.selectedFramework
+                                        ?? MockData.default,
+                                    isShowingDetailView: $frameworkGridVM.isShowingDetailView)
                             }
                         //--|............................................
                             
                     }
-                    // ∆ END ForEach
+                    // ∆ END OF: ForEach
                     //∆..........
                 }
-                // ∆ END LAZYVGRID
+                // ∆ END OF: LAZYVGRID
             }
             // ∆ END ScrollView
             .navigationTitle(" Frameworks")

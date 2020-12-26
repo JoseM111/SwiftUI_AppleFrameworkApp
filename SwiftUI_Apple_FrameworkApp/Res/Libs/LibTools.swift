@@ -20,6 +20,12 @@ extension Color {
     static let darkBlue = Color(r: 51, g: 61, b: 126)
     static let midOrange = Color(r: 232, g: 117, b: 46)
     
+    /// ™ Computed Porperty for light or dark mode directly from `Color` vs `UIColor`
+
+    static var primaryColor: Color {
+        Color(UIColor { $0.userInterfaceStyle == .dark ? UIColor(red: 255, green: 255, blue: 255, alpha: 1) : UIColor(red: 200, green: 200, blue: 200, alpha: 1) })
+    }
+
     
     /// ∆ Initializer
     /// <convenience> keyword can be left out because Initializers
