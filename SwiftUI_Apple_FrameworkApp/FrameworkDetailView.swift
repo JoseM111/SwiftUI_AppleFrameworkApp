@@ -15,12 +15,13 @@ extension FrameworkDetailView {
         }) {
             //∆..... LABEL .....
            Text("Learn More")
+            .foregroundColor(.primaryColor)
             .font(.title3)
             .fontWeight(.semibold)
         }
         /// ∆ END OF: Button
         .buttonStyle(
-            PrimaryButtonStyle(paddingAll: 10, bgColorAlt: .black,
+            PrimaryButtonStyle(paddingAll: 10, bgColorAlt: .lightBlue,
                                bgColor: .twitterBlue, w: 150, h: 40)
         )
         .animation(.easeIn)
@@ -33,10 +34,13 @@ extension FrameworkDetailView {
     // ™ œœœœœ[ xMarkButton ]œœœœœœœœœœœœœœœ
     var xMarkButton: some View {
         //∆..........
-        Button(action: { /* TODO */ }) {
+        Button(action: {
+            //∆.......... Must be set to false to dismiss the sheet
+            isShowingDetailView = false
+        }) {
             //∆..... LABEL .....
             Image(systemName: "xmark")
-                .foregroundColor(.primary)
+                .foregroundColor(Color(.label))
                 .imageScale(.large)
                 // Add a touch target in a frame
                 .frame(width: 44, height: 44)
@@ -57,6 +61,7 @@ struct FrameworkDetailView: View {
     var framework: Framework
     var colorChanged = Color.twitterBlue.opacity(0.4)
     //™•••••••••••••••••••••••••••••••••••«
+    @Binding var isShowingDetailView: Bool
     ///™«««««««««««««««««««««««««««««««««««
     
     
@@ -71,6 +76,7 @@ struct FrameworkDetailView: View {
                 Spacer(minLength: 0) // Spaced Horizontally
                 ///ººº..................................•••
                 
+                // MARK: -∆  Button(xMark)  '''''''''''''''''''''
                 xMarkButton
             }
             /// ∆ END OF: HStack
@@ -80,10 +86,10 @@ struct FrameworkDetailView: View {
             Spacer(minLength: 0) // Spaced Vertically
             ///ººº..................................•••
             
-            ///∆ ..... FrameworkTitleView .....
+            // MARK: -∆  FrameworkTitleView  '''''''''''''''''''''
             FrameworkTitleSubView(framework: framework)
             
-            ///∆ ........... Description ...........
+            // MARK: -∆  Description  '''''''''''''''''''''
             Text(framework.description)
                 .font(.body)
                 .fontWeight(.semibold)
@@ -94,7 +100,7 @@ struct FrameworkDetailView: View {
             Spacer(minLength: 0) // Spaced Horizontally
             ///ººº..................................•••
             
-            ///∆ ........... Button(learnMore) ...........
+            // MARK: -∆  Button(learnMore)  '''''''''''''''''''''
             learnMoreButton
             
         }
@@ -112,7 +118,9 @@ struct FrameworkDetailView_Previews: PreviewProvider {
     
     static var previews: some View {
         
-        FrameworkDetailView(framework: MockData.default)//.padding(.all, 100)
+        FrameworkDetailView(framework: MockData.default,
+                            isShowingDetailView: .constant(false))
+            //.padding(.all, 100)
         .preferredColorScheme(.dark)
         //.previewLayout(.sizeThatFits)
         //.previewLayout(.fixed(width: 320, height: 640))
