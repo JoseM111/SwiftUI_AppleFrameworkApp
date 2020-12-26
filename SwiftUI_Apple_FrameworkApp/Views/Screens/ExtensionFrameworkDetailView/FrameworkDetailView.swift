@@ -1,67 +1,13 @@
 import SwiftUI
 
-// MARK: -∆  EXTENSION OF: [( FrameworkDetailView )] •••••••••
-extension FrameworkDetailView {
-    
-    // MARK: @------- [Computed some-View Properties] -------
-    
-    // ™ œœœœœ[ learnMoreButton ]œœœœœœœœœœœœœœœ
-    var learnMoreButton: some View {
-        //∆..........
-        Button(action: {
-            //∆..........
-            
-            
-        }) {
-            //∆..... LABEL .....
-           Text("Learn More")
-            .foregroundColor(.primaryColor)
-            .font(.title3)
-            .fontWeight(.semibold)
-        }
-        /// ∆ END OF: Button
-        .buttonStyle(
-            PrimaryButtonStyle(paddingAll: 10, bgColorAlt: .lightBlue,
-                               bgColor: .twitterBlue, w: 150, h: 40)
-        )
-        .animation(.easeIn)
-        .padding(.bottom, 40)
-        
-        
-    }
-    /// ∆ END OF: learnMoreButton
-    
-    // ™ œœœœœ[ xMarkButton ]œœœœœœœœœœœœœœœ
-    var xMarkButton: some View {
-        //∆..........
-        Button(action: {
-            //∆.......... Must be set to false to dismiss the sheet
-            isShowingDetailView = false
-        }) {
-            //∆..... LABEL .....
-            Image(systemName: "xmark")
-                .foregroundColor(Color(.label))
-                .imageScale(.large)
-                // Add a touch target in a frame
-                .frame(width: 44, height: 44)
-        }
-        // ∆ END OF: Button
-        
-    }
-    ////// ∆ END OF: xMarkButton
-    
-}
-/// ∆ END OF EXTENSION: FrameworkDetailView
-
-// MARK: END OF: FrameworkDetailView
-
 struct FrameworkDetailView: View {
     // MARK: - ™PROPERTIES™
     ///™«««««««««««««««««««««««««««««««««««
+    @Binding var isShowingDetailView: Bool
+    @State var isShowingSafariView: Bool = false
+    //™•••••••••••••••••••••••••••••••••••«
     var framework: Framework
     var colorChanged = Color.twitterBlue.opacity(0.4)
-    //™•••••••••••••••••••••••••••••••••••«
-    @Binding var isShowingDetailView: Bool
     ///™«««««««««««««««««««««««««««««««««««
     
     
@@ -75,9 +21,6 @@ struct FrameworkDetailView: View {
                 ///ººº..................................•••
                 Spacer(minLength: 0) // Spaced Horizontally
                 ///ººº..................................•••
-                
-                // MARK: -∆  Button(xMark)  '''''''''''''''''''''
-                xMarkButton
             }
             /// ∆ END OF: HStack
             .padding()
@@ -118,8 +61,8 @@ struct FrameworkDetailView_Previews: PreviewProvider {
     
     static var previews: some View {
         
-        FrameworkDetailView(framework: MockData.default,
-                            isShowingDetailView: .constant(false))
+        FrameworkDetailView(isShowingDetailView: .constant(false),
+                            framework: MockData.default)
             //.padding(.all, 100)
         .preferredColorScheme(.dark)
         //.previewLayout(.sizeThatFits)

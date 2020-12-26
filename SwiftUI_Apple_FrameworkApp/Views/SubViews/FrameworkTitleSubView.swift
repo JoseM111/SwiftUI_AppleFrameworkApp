@@ -23,11 +23,11 @@ struct FrameworkTitleSubView: View {
     
     var body: some View {
         
-        VStack {
+        HStack {
             //∆ .... Image Of app-clip ....
             Image(framework.imageName)
                 .resizable()
-                .frame(width: 90, height: 90)
+                .frame(width: 70, height: 70)
             
             //∆ ........... Text ...........
             Text(framework.name)
@@ -37,8 +37,12 @@ struct FrameworkTitleSubView: View {
                 /// Handles our font name if it is super
                 /// long & cannot shrink smaller then 60%
                 .minimumScaleFactor(0.6)
+                .padding()
         }
-        .padding()
+        // ∆ END OF: HStack
+        
+        
+        
         //∆ HANGER 🪝👕🪝 .................
         
     }
